@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Start numbers -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- First number -->
+        <EditText
+            android:id="@+id/edit1"
+            android:hint="Number 01"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Second number -->
+        <EditText
+            android:id="@+id/edit2"
+            android:hint="Number 02"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- Buttons For Mathematical Operations -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Button Addition -->
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#2196F3"
+            android:text="+"
+            android:textSize="20sp" />
+
+        <!-- Button Substraction -->
+        <Button
+            android:id="@+id/button_substract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#03A9F4"
+            android:text="-"
+            android:textSize="20sp" />
+
+        <!-- Button Multiplication -->
+        <Button
+            android:id="@+id/button_multiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#00BCD4"
+            android:text="×"
+            android:textSize="20sp" />
+
+        <!-- Button Division -->
+        <Button
+            android:id="@+id/button_divide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:text="÷"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title Results -->
+        <TextView
+            android:text="Results :"
+            android:textColor="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAlignment="viewEnd"
+            android:layout_weight="1"/>
+
+        <!-- Result Number -->
+        <TextView
+            android:id="@+id/result"
+            android:textColor="@color/purple_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAlignment="viewStart"
+            android:hint="0"
+            android:layout_weight="1"
+            android:paddingHorizontal="10dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
